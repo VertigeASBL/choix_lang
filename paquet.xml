@@ -1,0 +1,24 @@
+<paquet
+  prefix="choix_lang"
+  categorie="navigation"
+  version="1.0.0"
+  etat="dev"
+  compatibilite="[3.0.16;3.0.*]"
+  logo=""
+  documentation=""
+>
+  <!--
+    Paquet genere le 2014-05-26 13:06:02
+  -->
+
+  <nom>Page de choix de langue</nom>
+
+  <auteur lien='http://vertige.org'>Michel @ Vertige ASBL</auteur>
+
+  <licence>GNU/GPL</licence>
+
+  <necessite nom="saisies" compatibilite="[1.40.4;[" />
+
+  <utilise nom="mdl" />
+
+</paquet>
