@@ -9,15 +9,17 @@
  * @package    SPIP\Choix_lang\Options
  */
 
-if (!defined('_ECRIRE_INC_VERSION')) return;
+if (! defined('_ECRIRE_INC_VERSION')) {
+	return;
+}
 
 // Lorsqu'il y a un paramètre lang_ok dans l'url, c'est qu'on a fait un choix
 if (_request('lang_ok')) {
-    setcookie('a_choisi_sa_langue_en_pleine_conscience', 'oui');
-}
 
-else if (( ! isset($_COOKIE['a_choisi_sa_langue_en_pleine_conscience'])) AND
-         ( ! _IS_BOT) AND (_request('page') !== 'choix_lang')) {
+	setcookie('a_choisi_sa_langue_en_pleine_conscience', 'oui');
+
+} elseif (( ! isset($_COOKIE['a_choisi_sa_langue_en_pleine_conscience'])) and
+          ( ! _IS_BOT) and (_request('page') !== 'choix_lang')) {
 
     include_spip('inc/headers');
     include_spip('inc/utils');
