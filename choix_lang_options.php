@@ -21,7 +21,7 @@ if (_request('lang_ok')) {
 } elseif (( ! test_espace_prive())
           and ( ! isset($_COOKIE['a_choisi_sa_langue_en_pleine_conscience']))
           and ( ! _IS_BOT)
-          and (_request('page') !== 'choix_lang')) {
+          and ( ! in_array(_request('page'), array('choix_lang', 'login')))) {
 
     include_spip('inc/headers');
     include_spip('inc/utils');
