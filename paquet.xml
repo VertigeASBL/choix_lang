@@ -1,7 +1,7 @@
 <paquet
   prefix="choix_lang"
   categorie="navigation"
-  version="1.0.0"
+  version="1.0.1"
   etat="dev"
   compatibilite="[3.0.16;3.0.*]"
   logo=""

@@ -18,8 +18,10 @@ if (_request('lang_ok')) {
 
 	setcookie('a_choisi_sa_langue_en_pleine_conscience', 'oui');
 
-} elseif (( ! isset($_COOKIE['a_choisi_sa_langue_en_pleine_conscience'])) and
-          ( ! _IS_BOT) and (_request('page') !== 'choix_lang')) {
+} elseif (( ! test_espace_prive())
+          and ( ! isset($_COOKIE['a_choisi_sa_langue_en_pleine_conscience']))
+          and ( ! _IS_BOT)
+          and (_request('page') !== 'choix_lang')) {
 
     include_spip('inc/headers');
     include_spip('inc/utils');
